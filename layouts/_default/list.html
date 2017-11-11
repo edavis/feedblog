@@ -1,0 +1,6 @@
+{{ range .Data.Pages.ByPublishDate.Reverse }}
+<p>
+Feed Title: <a href="{{ .Params.FeedURL }}">{{ .Params.FeedTitle }}</a><br>
+Item Title: <a href="{{ .Params.ItemURL }}" target="_blank" rel="nofollow">{{ safeHTML .Title }}</a><br>
+Item Date: {{ .PublishDate.Local }}<br>
+{{ end }}

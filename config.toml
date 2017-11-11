@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://rss.ericdavis.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "my feedblog"
+disableKinds = ["RSS", "sitemap"]
